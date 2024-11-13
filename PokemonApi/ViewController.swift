@@ -8,6 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var pokeScreen: PokeView?
+    
+    override func loadView() {
+        pokeScreen = PokeView()
+        view = pokeScreen
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
